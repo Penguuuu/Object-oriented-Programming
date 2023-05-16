@@ -16,7 +16,7 @@ function generateLogo() {
       {
         type: "input",
         name: "textColor",
-        message: "Enter the text color (keyword or hexadecimal number):",
+        message: "Enter the text color (either a keyword or a hex number):",
       },
       {
         type: "list",
@@ -27,7 +27,7 @@ function generateLogo() {
       {
         type: "input",
         name: "shapeColor",
-        message: "Enter the shape color (keyword or hexadecimal number):",
+        message: "Enter the shape color (either a keyword or a hex number)ommi:",
       },
     ])
     .then((answers) => {
