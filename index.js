@@ -8,26 +8,26 @@ function generateLogo() {
       {
         type: "input",
         name: "text",
-        message: "Enter up to three characters for the logo:",
+        message: "Enter up to 5 characters for your logo :",
         validate: function (input) {
-          return input.length <= 3 ? true : "Enter up to three characters.";
+          return input.length <= 5 ? true : "Enter up to 5 characters.";
         },
       },
       {
         type: "input",
         name: "textColor",
-        message: "Enter the text color (either a keyword or a hex number):",
+        message: "Choose your text color (either a keyword or a hex number):",
       },
       {
         type: "list",
         name: "shape",
-        message: "Choose a shape:",
+        message: "Choose the shape of your logo:",
         choices: ["Triangle", "Circle", "Square"],
       },
       {
         type: "input",
         name: "shapeColor",
-        message: "Enter the shape color (either a keyword or a hex number)ommi:",
+        message: "Choose your shape color (either a keyword or a hex number)ommi:",
       },
     ])
     .then((answers) => {
